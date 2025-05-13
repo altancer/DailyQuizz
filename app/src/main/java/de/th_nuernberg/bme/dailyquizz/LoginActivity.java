@@ -5,15 +5,15 @@ import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class QuestionActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question);
+        setContentView(R.layout.activity_login);
 
-        Button confirmBtn = findViewById(R.id.confirmBtn);
-        confirmBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(QuestionActivity.this, ResultActivity.class);
+        Button loginBtn = findViewById(R.id.loginBtn);
+        loginBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
             startActivity(intent);
         });
     }

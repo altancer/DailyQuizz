@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:padding="24dp">
 
-    <!-- Button, um die Frage zu starten -->
-    <Button
-        android:id="@+id/startQuestionBtn"
+    <TextView
+        android:id="@+id/usernameDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Frage starten"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+        android:text="Willkommen, Amira!"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/scoreDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punkte: 120"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/geoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geografie" />
+
+    <Button
+        android:id="@+id/historyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geschichte"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/animalBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiere"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
