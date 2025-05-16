@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/categoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategorie: Geografie"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:id="@+id/questionText"
@@ -11,7 +20,7 @@
         android:layout_height="wrap_content"
         android:text="Was ist die Hauptstadt von Frankreich?"
         android:textSize="20sp"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="24dp" />
 
     <Button
         android:id="@+id/answerA"
@@ -23,14 +32,14 @@
         android:id="@+id/answerB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="B: London"
+        android:text="B: Berlin"
         android:layout_marginTop="8dp" />
 
     <Button
         android:id="@+id/answerC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="C: Berlin"
+        android:text="C: Madrid"
         android:layout_marginTop="8dp" />
 
     <Button
@@ -39,11 +48,4 @@
         android:layout_height="wrap_content"
         android:text="D: Rom"
         android:layout_marginTop="8dp" />
-
-    <Button
-        android:id="@+id/confirmBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Antwort bestätigen"
-        android:layout_marginTop="24dp" />
 </LinearLayout>

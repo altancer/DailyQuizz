@@ -11,10 +11,18 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button loginBtn = findViewById(R.id.loginBtn);
-        loginBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-            startActivity(intent);
+        // Google-Login-Dummy
+        Button googleBtn = findViewById(R.id.googleLoginBtn);
+        googleBtn.setOnClickListener(v -> {
+            // Hier später echte Auth einbauen
+            startActivity(new Intent(this, HomeActivity.class));
+        });
+
+        // Facebook-Login-Dummy
+        Button facebookBtn = findViewById(R.id.facebookLoginBtn);
+        facebookBtn.setOnClickListener(v -> {
+            // Hier später echte Auth einbauen
+            startActivity(new Intent(this, HomeActivity.class));
         });
     }
 }

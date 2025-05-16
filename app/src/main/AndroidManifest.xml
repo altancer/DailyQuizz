@@ -8,20 +8,7 @@
         android:label="Daily Quizz"
         android:theme="@style/Theme.DailyQuizz">
 
-        <!-- MainActivity mit Intent-Filter benötigt android:exported -->
-        <activity android:name=".MainActivity"
-            android:exported="true"> <!-- Füge dies hinzu -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".HomeActivity" android:exported="true" />
-        <activity android:name=".QuestionActivity" android:exported="true" />
-        <activity android:name=".ResultActivity" android:exported="true" />
-        <activity android:name=".StatsActivity" android:exported="true" />
-
+        <!-- Startpunkt: Login -->
         <activity android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -29,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <!-- Weitere Screens -->
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".HomeActivity" android:exported="true" />
+        <activity android:name=".QuestionActivity" android:exported="true" />
+        <activity android:name=".ResultActivity" android:exported="true" />
+        <activity android:name=".StatsActivity" android:exported="true" />
+        <activity android:name=".FriendsActivity" android:exported="true" />
+        <activity android:name=".RankingActivity" android:exported="true" />
+        <activity android:name=".CategoryActivity" android:exported="true" />
+
 
     </application>
 

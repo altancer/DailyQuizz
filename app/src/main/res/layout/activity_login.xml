@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp">
+    android:padding="32dp">
 
+    <!-- Titel -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Quizz"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Username -->
     <EditText
         android:id="@+id/usernameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Benutzername" />
+        android:hint="Username"
+        android:inputType="textPersonName" />
 
+    <!-- Passwort -->
     <EditText
         android:id="@+id/passwordInput"
         android:layout_width="match_parent"
@@ -20,10 +33,24 @@
         android:inputType="textPassword"
         android:layout_marginTop="16dp" />
 
+    <!-- Abstand -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Google Login Button -->
     <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="wrap_content"
+        android:id="@+id/googleLoginBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_marginTop="24dp" />
+        android:text="Anmelden mit Google" />
+
+    <!-- Facebook Login Button -->
+    <Button
+        android:id="@+id/facebookLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anmelden mit Facebook"
+        android:layout_marginTop="12dp" />
+
 </LinearLayout>

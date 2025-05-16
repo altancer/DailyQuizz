@@ -11,18 +11,26 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button geoBtn = findViewById(R.id.geoBtn);
-        Button historyBtn = findViewById(R.id.historyBtn);
-        Button animalBtn = findViewById(R.id.animalBtn);
+        Button friendsBtn = findViewById(R.id.friendsBtn);
+        Button rankingBtn = findViewById(R.id.rankingBtn);
+        Button quizBtn = findViewById(R.id.quizBtn);
 
-        geoBtn.setOnClickListener(v -> startCategory("Geografie"));
-        historyBtn.setOnClickListener(v -> startCategory("Geschichte"));
-        animalBtn.setOnClickListener(v -> startCategory("Tiere"));
-    }
+        // Freunde-Button
+        friendsBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FriendsActivity.class);
+            startActivity(intent);
+        });
 
-    private void startCategory(String category) {
-        Intent intent = new Intent(this, QuestionActivity.class);
-        intent.putExtra("category", category); // z.B. später verwendbar für Anzeige
-        startActivity(intent);
+        // Ranking-Button
+        rankingBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, RankingActivity.class);
+            startActivity(intent);
+        });
+
+        // Quiz-Button → geht jetzt zur Kategorie-Auswahl
+        quizBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, CategoryActivity.class);
+            startActivity(intent);
+        });
     }
 }
