@@ -30,6 +30,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".FriendsActivity" android:exported="true" />
+        <activity android:name=".RankingActivity" android:exported="true" />
+        <activity android:name=".CategoryActivity" android:exported="true" />
+
     </application>
 
 </manifest>

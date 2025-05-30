@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +11,8 @@
         android:id="@+id/usernameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Benutzername" />
+        android:hint="Benutzername"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/passwordInput"
@@ -22,8 +24,31 @@
 
     <Button
         android:id="@+id/loginBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:layout_marginTop="24dp" />
+
+    <!-- Google Login Button mit Icon -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/googleLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in with Google"
+        android:layout_marginTop="24dp"
+        android:icon="@drawable/google_logo"
+        app:iconPadding="12dp"
+        app:iconGravity="textStart" />
+
+    <!-- Facebook Login Button mit Icon -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/facebookLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Facebook"
+        android:layout_marginTop="12dp"
+        android:icon="@drawable/facebook_logo"
+        app:iconPadding="12dp"
+        app:iconGravity="textStart" />
+
 </LinearLayout>

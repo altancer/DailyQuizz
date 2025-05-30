@@ -3,42 +3,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center_horizontal">
+    android:gravity="center"
+    android:padding="24dp">
 
     <TextView
-        android:id="@+id/usernameDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Willkommen, Nutzer"
+        android:text="Wähle eine Kategorie"
         android:textSize="22sp"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:id="@+id/scoreDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Punkte: 0"
-        android:textSize="18sp"
-        android:layout_marginBottom="32dp" />
+        android:layout_marginBottom="24dp" />
 
     <Button
-        android:id="@+id/friendsBtn"
+        android:id="@+id/geoBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Freunde" />
+        android:text="Geografie" />
 
     <Button
-        android:id="@+id/rankingBtn"
+        android:id="@+id/politikBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ranking"
+        android:text="Politik"
         android:layout_marginTop="12dp" />
 
     <Button
-        android:id="@+id/quizBtn"
+        android:id="@+id/tiereBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quiz starten"
+        android:text="Tiere"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/geschichteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geschichte"
         android:layout_marginTop="12dp" />
 </LinearLayout>
